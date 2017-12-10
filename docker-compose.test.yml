@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  web-serv-2:
+    build: .
+    ports:
+      - "5001:8080"
+networks:
+  default:
+    external:
+      name: docker_default
+
+
+#    depends_on:
+#      - pgdb
+#
+#  pgdb:
+#    image: postgres:9
+#    environment:
+#      POSTGRES_USER: root
+#      POSTGRES_PASSWORD: password
+#      POSTGRES_DB: mydb
+#    ports:
+#      - "5432:5432"
+#    volumes:
+#      - "/data/pgsql:/var/lib/postgresql"
+

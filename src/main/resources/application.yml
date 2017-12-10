@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://pgdb:5432/mydb
+    username: root
+    password: password
